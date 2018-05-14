@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  HomeController.swift
 //  ULimaGamesApp
 //
 //  Created by System Administrator on 5/14/18.
@@ -8,18 +8,25 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
-
+class HomeController: UIViewController {
+    
+    @IBOutlet weak var NameTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-
+    @IBAction func Begin(sender: AnyObject) {
+        if NameTextField.text?.isEmpty ?? true {
+            
+        } else {
+            performSegueWithIdentifier("ShowGamesSegue", sender: self)
+        }
+    }
 }
-

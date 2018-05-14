@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		619D7F7D20A9C2E60082C286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D7F7C20A9C2E60082C286 /* AppDelegate.swift */; };
-		619D7F7F20A9C2E60082C286 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D7F7E20A9C2E60082C286 /* FirstViewController.swift */; };
-		619D7F8120A9C2E60082C286 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D7F8020A9C2E60082C286 /* SecondViewController.swift */; };
 		619D7F8420A9C2E60082C286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619D7F8220A9C2E60082C286 /* Main.storyboard */; };
 		619D7F8620A9C2E60082C286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 619D7F8520A9C2E60082C286 /* Assets.xcassets */; };
 		619D7F8920A9C2E60082C286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 619D7F8720A9C2E60082C286 /* LaunchScreen.storyboard */; };
+		619D7F9520A9F7FE0082C286 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D7F9420A9F7FE0082C286 /* HomeController.swift */; };
+		619D7F9720A9F8FB0082C286 /* MichiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D7F9620A9F8FB0082C286 /* MichiController.swift */; };
+		619D7F9920A9F91B0082C286 /* BlackjackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D7F9820A9F91B0082C286 /* BlackjackController.swift */; };
+		619D7F9B20A9F96C0082C286 /* GoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D7F9A20A9F96C0082C286 /* GoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		619D7F7920A9C2E60082C286 /* ULimaGamesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ULimaGamesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		619D7F7C20A9C2E60082C286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		619D7F7E20A9C2E60082C286 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		619D7F8020A9C2E60082C286 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		619D7F8320A9C2E60082C286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		619D7F8520A9C2E60082C286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		619D7F8820A9C2E60082C286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		619D7F8A20A9C2E60082C286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		619D7F9420A9F7FE0082C286 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		619D7F9620A9F8FB0082C286 /* MichiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MichiController.swift; sourceTree = "<group>"; };
+		619D7F9820A9F91B0082C286 /* BlackjackController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackjackController.swift; sourceTree = "<group>"; };
+		619D7F9A20A9F96C0082C286 /* GoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +89,10 @@
 		619D7F9220A9C3AE0082C286 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				619D7F7E20A9C2E60082C286 /* FirstViewController.swift */,
-				619D7F8020A9C2E60082C286 /* SecondViewController.swift */,
+				619D7F9420A9F7FE0082C286 /* HomeController.swift */,
+				619D7F9620A9F8FB0082C286 /* MichiController.swift */,
+				619D7F9820A9F91B0082C286 /* BlackjackController.swift */,
+				619D7F9A20A9F96C0082C286 /* GoController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -162,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				619D7F8120A9C2E60082C286 /* SecondViewController.swift in Sources */,
+				619D7F9520A9F7FE0082C286 /* HomeController.swift in Sources */,
+				619D7F9B20A9F96C0082C286 /* GoController.swift in Sources */,
+				619D7F9720A9F8FB0082C286 /* MichiController.swift in Sources */,
+				619D7F9920A9F91B0082C286 /* BlackjackController.swift in Sources */,
 				619D7F7D20A9C2E60082C286 /* AppDelegate.swift in Sources */,
-				619D7F7F20A9C2E60082C286 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
