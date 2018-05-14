@@ -15,6 +15,9 @@
 		619D7F9720A9F8FB0082C286 /* MichiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D7F9620A9F8FB0082C286 /* MichiController.swift */; };
 		619D7F9920A9F91B0082C286 /* BlackjackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D7F9820A9F91B0082C286 /* BlackjackController.swift */; };
 		619D7F9B20A9F96C0082C286 /* GoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619D7F9A20A9F96C0082C286 /* GoController.swift */; };
+		61C1AE9520AA1FFC003DA5CC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C1AE9420AA1FFC003DA5CC /* CardView.swift */; };
+		61C1AE9720AA202C003DA5CC /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61C1AE9620AA202C003DA5CC /* CardView.xib */; };
+		61C1AE9B20AA21DD003DA5CC /* BlackjackModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C1AE9A20AA21DD003DA5CC /* BlackjackModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		619D7F9620A9F8FB0082C286 /* MichiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MichiController.swift; sourceTree = "<group>"; };
 		619D7F9820A9F91B0082C286 /* BlackjackController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackjackController.swift; sourceTree = "<group>"; };
 		619D7F9A20A9F96C0082C286 /* GoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoController.swift; sourceTree = "<group>"; };
+		61C1AE9420AA1FFC003DA5CC /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		61C1AE9620AA202C003DA5CC /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		61C1AE9A20AA21DD003DA5CC /* BlackjackModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackjackModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,7 @@
 		619D7F9020A9C3980082C286 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				61C1AE9A20AA21DD003DA5CC /* BlackjackModels.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -82,6 +89,7 @@
 		619D7F9120A9C3A00082C286 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				61C1AE9920AA21CB003DA5CC /* BlackjackViews */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -95,6 +103,15 @@
 				619D7F9A20A9F96C0082C286 /* GoController.swift */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		61C1AE9920AA21CB003DA5CC /* BlackjackViews */ = {
+			isa = PBXGroup;
+			children = (
+				61C1AE9420AA1FFC003DA5CC /* CardView.swift */,
+				61C1AE9620AA202C003DA5CC /* CardView.xib */,
+			);
+			name = BlackjackViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +174,7 @@
 			files = (
 				619D7F8920A9C2E60082C286 /* LaunchScreen.storyboard in Resources */,
 				619D7F8620A9C2E60082C286 /* Assets.xcassets in Resources */,
+				61C1AE9720AA202C003DA5CC /* CardView.xib in Resources */,
 				619D7F8420A9C2E60082C286 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,7 +190,9 @@
 				619D7F9B20A9F96C0082C286 /* GoController.swift in Sources */,
 				619D7F9720A9F8FB0082C286 /* MichiController.swift in Sources */,
 				619D7F9920A9F91B0082C286 /* BlackjackController.swift in Sources */,
+				61C1AE9520AA1FFC003DA5CC /* CardView.swift in Sources */,
 				619D7F7D20A9C2E60082C286 /* AppDelegate.swift in Sources */,
+				61C1AE9B20AA21DD003DA5CC /* BlackjackModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +342,7 @@
 				619D7F8F20A9C2E60082C286 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
