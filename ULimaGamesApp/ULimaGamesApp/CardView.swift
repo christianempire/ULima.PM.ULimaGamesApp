@@ -9,9 +9,9 @@
 import UIKit
 
 class CardView: UIView {
-    @IBOutlet var ContentView: UIView!
-    @IBOutlet weak var CardBackLabel: UILabel!
-    @IBOutlet weak var CardValueLabel: UILabel!
+    @IBOutlet private var ContentView: UIView!
+    @IBOutlet weak private var CardBackLabel: UILabel!
+    @IBOutlet weak private var CardValueLabel: UILabel!
     
     private var _cardIsRevealed: Bool = false;
     private var _cardObject: Card?;

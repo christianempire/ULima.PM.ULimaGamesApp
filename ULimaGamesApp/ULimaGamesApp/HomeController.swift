@@ -9,8 +9,7 @@
 import UIKit
 
 class HomeController: UIViewController {
-    
-    @IBOutlet weak var NameTextField: UITextField!
+    @IBOutlet weak private var NameTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()

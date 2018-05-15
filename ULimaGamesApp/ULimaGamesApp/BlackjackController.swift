@@ -10,15 +10,15 @@ import UIKit
 
 class BlackjackController: UIViewController {
     
-    @IBOutlet weak var HouseCard1: CardView!
-    @IBOutlet weak var HouseCard2: CardView!
-    @IBOutlet weak var HouseCard3: CardView!
-    @IBOutlet weak var HouseCard4: CardView!
-    @IBOutlet weak var PlayerCard1: CardView!
-    @IBOutlet weak var PlayerCard2: CardView!
-    @IBOutlet weak var PlayerCard3: CardView!
-    @IBOutlet weak var PlayerCard4: CardView!
-    @IBOutlet weak var StatusLabel: UILabel!
+    @IBOutlet weak private var HouseCard1: CardView!
+    @IBOutlet weak private var HouseCard2: CardView!
+    @IBOutlet weak private var HouseCard3: CardView!
+    @IBOutlet weak private var HouseCard4: CardView!
+    @IBOutlet weak private var PlayerCard1: CardView!
+    @IBOutlet weak private var PlayerCard2: CardView!
+    @IBOutlet weak private var PlayerCard3: CardView!
+    @IBOutlet weak private var PlayerCard4: CardView!
+    @IBOutlet weak private var StatusLabel: UILabel!
     
     // Game flags...
     private var _gameIsOver: Bool = false;
