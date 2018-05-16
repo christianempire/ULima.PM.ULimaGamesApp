@@ -6,7 +6,7 @@
 //  Copyright © 2018 Universidad de Lima. All rights reserved.
 //
 
-import UIKit
+import UIKit;
 
 class BlackjackController: UIViewController {
     

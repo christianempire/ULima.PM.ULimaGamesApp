@@ -6,7 +6,7 @@
 //  Copyright © 2018 Universidad de Lima. All rights reserved.
 //
 
-import UIKit
+import UIKit;
 
 class SquareView: UIView {
     @IBOutlet private var ContentView: UIView!
@@ -14,7 +14,17 @@ class SquareView: UIView {
     
     private var _squareWasPlayed: Bool = false;
     
-    var SquareIsPlayed: Bool {
+    var playedSymbol: String {
+        get {
+            if _squareWasPlayed {
+                return PlayLabel.text!;
+            } else {
+                return "";
+            }
+        }
+    }
+    
+    var SquareWasPlayed: Bool {
         get {
             return _squareWasPlayed;
         }
@@ -31,11 +41,17 @@ class SquareView: UIView {
     }
     
     private func InitView() {
-        
+        NSBundle.mainBundle().loadNibNamed("SquareView", owner: self, options: nil);
+        addSubview(ContentView);
+        ContentView.frame = self.bounds;
+        ContentView.autoresizingMask = [.FlexibleHeight, .FlexibleWidth];
+        PlayLabel.frame = CGRect(x: 0, y: 0, width: ContentView.frame.width, height: ContentView.frame.height);
+        PlayLabel.hidden = true;
     }
     
     func PlaySquare(playSymbol: String) {
-        
+        PlayLabel.hidden = false;
+        PlayLabel.text = playSymbol;
         
         _squareWasPlayed = true;
     }

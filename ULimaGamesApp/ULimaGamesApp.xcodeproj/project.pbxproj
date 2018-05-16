@@ -20,6 +20,7 @@
 		61C1AE9B20AA21DD003DA5CC /* BlackjackModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C1AE9A20AA21DD003DA5CC /* BlackjackModels.swift */; };
 		61D24F4020AB5C930045C900 /* SquareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D24F3F20AB5C930045C900 /* SquareView.xib */; };
 		61D24F4220AB5C9E0045C900 /* SquareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D24F4120AB5C9E0045C900 /* SquareView.swift */; };
+		61D24F4420ABA9100045C900 /* MichiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61D24F4320ABA9100045C900 /* MichiModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		61C1AE9A20AA21DD003DA5CC /* BlackjackModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackjackModels.swift; sourceTree = "<group>"; };
 		61D24F3F20AB5C930045C900 /* SquareView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SquareView.xib; sourceTree = "<group>"; };
 		61D24F4120AB5C9E0045C900 /* SquareView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SquareView.swift; sourceTree = "<group>"; };
+		61D24F4320ABA9100045C900 /* MichiModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MichiModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				61C1AE9A20AA21DD003DA5CC /* BlackjackModels.swift */,
+				61D24F4320ABA9100045C900 /* MichiModels.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				619D7F9920A9F91B0082C286 /* BlackjackController.swift in Sources */,
 				61C1AE9520AA1FFC003DA5CC /* CardView.swift in Sources */,
 				619D7F7D20A9C2E60082C286 /* AppDelegate.swift in Sources */,
+				61D24F4420ABA9100045C900 /* MichiModels.swift in Sources */,
 				61C1AE9B20AA21DD003DA5CC /* BlackjackModels.swift in Sources */,
 				61D24F4220AB5C9E0045C900 /* SquareView.swift in Sources */,
 			);
