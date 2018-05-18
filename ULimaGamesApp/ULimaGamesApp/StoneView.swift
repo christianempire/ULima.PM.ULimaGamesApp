@@ -9,7 +9,7 @@
 import UIKit;
 
 class StoneView: UIView {
-    @IBOutlet weak private var ContentView: UILabel!
+    @IBOutlet var ContentView: UIView!
     @IBOutlet weak var PlayButton: UIButton!
     
     private var _stoneWasPlayed: Bool = false;
@@ -48,7 +48,7 @@ class StoneView: UIView {
         PlayButton.setTitle("", forState: .Normal);
     }
     
-    func PlaySquare(playSymbol: String) {
+    func PlayStone(playSymbol: String) {
         PlayButton.setTitle(playSymbol, forState: .Normal);
         
         _stoneWasPlayed = true;

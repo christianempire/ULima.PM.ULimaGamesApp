@@ -10,12 +10,11 @@ import Foundation;
 import UIKit;
 
 class Grid {
-    private var _size: Int;
     private var _stones: Array<Stone>;
     
     var Size: Int {
         get {
-            return _size;
+            return 10;
         }
     }
     
@@ -25,16 +24,51 @@ class Grid {
         }
     }
     
-    init (size: Int) {
-        _size = size;
+    init () {
         _stones = Array<Stone>();
-        
-        // TODO
     }
     
     func Build (vc: UIViewController) {
-        for stones in _stones {
-            vc.view.addSubview(stones.View);
+        let initialX = 20;
+        let initialY = 124;
+        let lineMargin = Int(360 / Size);
+        
+        // Build grid
+        for i in 0...Size {
+            let x = initialX + (i * lineMargin);
+            
+            let line = UILabel(frame: CGRect(x: x - 1, y: initialY, width: 2, height: 360));
+            
+            line.backgroundColor = UIColor.brownColor();
+            
+            vc.view.addSubview(line);
+        }
+        
+        for i in 0...Size {
+            let y = initialY + (i * lineMargin);
+            
+            let line = UILabel(frame: CGRect(x: initialX, y: y - 1, width: 360, height: 2));
+            
+            line.backgroundColor = UIColor.brownColor();
+            
+            vc.view.addSubview(line);
+        }
+        
+        // Create stones
+        var stoneIndex = 0;
+        
+        for i in 0...Size {
+            for j in 0...Size {
+                let view = StoneView();
+                let x = initialX + (i * lineMargin) - 10;
+                let y = initialY + (j * lineMargin) - 10;
+                
+                view.frame = CGRect(x: x, y: y, width: 20, height: 20);
+                
+                vc.view.addSubview(view);
+                
+                _stones.append(Stone(view: view, xCoordinate: i, yCoordinate: j, identifier: stoneIndex++));
+            }
         }
     }
     
@@ -42,6 +76,21 @@ class Grid {
         for square in _stones {
             square.View.removeFromSuperview();
         }
+    }
+    
+    func GetScores() -> [String: Int] {
+        var scores = [String: Int]();
+        
+        scores["⚪"] = 2;
+        scores["⚫"] = 3;
+        
+        return scores;
+    }
+    
+    func GetState() -> String {
+        
+        
+        return GoStates.NoWinner;
     }
     
     func GetStoneByCoordinates(xCoordinate: Int, _ yCoordinate: Int) -> Stone {
@@ -65,6 +114,11 @@ class Grid {
     func GetStoneByIdentifier(identifier: Int) -> Stone {
         return _stones[identifier];
     }
+}
+
+class GoStates {
+    static let NoWinner = "NW";
+    static let Tie = "TIE";
 }
 
 class Stone {

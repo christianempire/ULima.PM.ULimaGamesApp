@@ -7,22 +7,22 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StoneView" customModule="ULimaGamesApp" customModuleProvider="target">
             <connections>
-                <outlet property="PlayButton" destination="E5H-1R-KpV" id="akN-84-h05"/>
+                <outlet property="ContentView" destination="iN0-l3-epB" id="3hC-4Z-XND"/>
+                <outlet property="PlayButton" destination="E5H-1R-KpV" id="Qdp-WZ-6lo"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5H-1R-KpV">
-                    <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                     <state key="normal" title="-">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
                 </button>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="E5H-1R-KpV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2el-jP-lUs"/>
                 <constraint firstAttribute="trailing" secondItem="E5H-1R-KpV" secondAttribute="trailing" id="TFU-gc-950"/>
@@ -33,7 +33,7 @@
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="102.5" y="179.5"/>
+            <point key="canvasLocation" x="102" y="179"/>
         </view>
     </objects>
 </document>
