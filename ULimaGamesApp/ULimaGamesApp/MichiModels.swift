@@ -54,6 +54,12 @@ class Michi {
         }
     }
     
+    func DestroyBoard() {
+        for square in _squares {
+            square.View.removeFromSuperview();
+        }
+    }
+    
     func GetSquareByCoordinates(xCoordinate: Int, _ yCoordinate: Int) -> Square {
         var squareIndex = 0;
         var squareFound = false;
@@ -236,12 +242,6 @@ class Michi {
         }
         
         return  MichiStates.NoWinner;
-    }
-    
-    func DestroyBoard() {
-        for square in _squares {
-            square.View.removeFromSuperview();
-        }
     }
 }
 
