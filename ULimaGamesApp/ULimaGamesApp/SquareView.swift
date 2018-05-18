@@ -10,14 +10,14 @@ import UIKit;
 
 class SquareView: UIView {
     @IBOutlet private var ContentView: UIView!
-    @IBOutlet weak private var PlayLabel: UILabel!
+    @IBOutlet weak var PlayButton: UIButton!
     
     private var _squareWasPlayed: Bool = false;
     
-    var playedSymbol: String {
+    var PlayedSymbol: String {
         get {
             if _squareWasPlayed {
-                return PlayLabel.text!;
+                return PlayButton.titleLabel!.text!;
             } else {
                 return "";
             }
@@ -45,13 +45,11 @@ class SquareView: UIView {
         addSubview(ContentView);
         ContentView.frame = self.bounds;
         ContentView.autoresizingMask = [.FlexibleHeight, .FlexibleWidth];
-        PlayLabel.frame = CGRect(x: 0, y: 0, width: ContentView.frame.width, height: ContentView.frame.height);
-        PlayLabel.hidden = true;
+        PlayButton.setTitle("", forState: .Normal);
     }
     
     func PlaySquare(playSymbol: String) {
-        PlayLabel.hidden = false;
-        PlayLabel.text = playSymbol;
+        PlayButton.setTitle(playSymbol, forState: .Normal);
         
         _squareWasPlayed = true;
     }

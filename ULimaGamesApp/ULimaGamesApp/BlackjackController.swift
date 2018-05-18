@@ -116,10 +116,20 @@ class BlackjackController: UIViewController {
         if _itsPlayersTurn {
             if _playerChoseToStand {
                 _itsPlayersTurn = false;
+                
+                return;
             } else if !PlayerCard3.CardIsRevealed || !PlayerCard4.CardIsRevealed {
                 return;
             }
         } else {
+            if _playerChoseToStand && (houseTotal > playerTotal) {
+                StatusLabel.text = "House wins";
+                
+                _gameIsOver = true;
+                
+                return;
+            }
+            
             if !HouseCard3.CardIsRevealed {
                 // House plays card 3
                 HouseCard3.RevealCard();
@@ -238,22 +248,22 @@ class BlackjackController: UIViewController {
         var possibleContributions = Array<Int>()
         
         if numberOfAces >= 1 && numberOfAces <= 4 {
-            if numberOfAces <= 1 {
+            if numberOfAces >= 1 {
                 possibleContributions.append(1);
                 possibleContributions.append(11);
             }
             
-            if numberOfAces <= 2 {
+            if numberOfAces >= 2 {
                 possibleContributions.append(2);
                 possibleContributions.append(12);
             }
             
-            if numberOfAces <= 3 {
+            if numberOfAces >= 3 {
                 possibleContributions.append(3);
                 possibleContributions.append(13);
             }
             
-            if numberOfAces <= 4 {
+            if numberOfAces >= 4 {
                 possibleContributions.append(4);
                 possibleContributions.append(14);
             }

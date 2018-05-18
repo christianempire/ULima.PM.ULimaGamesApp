@@ -8,7 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SquareView" customModule="ULimaGamesApp" customModuleProvider="target">
             <connections>
                 <outlet property="ContentView" destination="iN0-l3-epB" id="dpN-p2-eyg"/>
-                <outlet property="PlayLabel" destination="Qbo-Ql-Tan" id="iI7-LB-eDl"/>
+                <outlet property="PlayButton" destination="pZe-xt-d6i" id="TNU-Rx-Xya"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -16,14 +16,21 @@
             <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbo-Ql-Tan">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZe-xt-d6i">
                     <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="-">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="pZe-xt-d6i" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1DU-dX-DMN"/>
+                <constraint firstAttribute="bottom" secondItem="pZe-xt-d6i" secondAttribute="bottom" id="3I4-vn-iWQ"/>
+                <constraint firstItem="pZe-xt-d6i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Nta-2U-Rnr"/>
+                <constraint firstAttribute="trailing" secondItem="pZe-xt-d6i" secondAttribute="trailing" id="yy3-0h-BEB"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>
